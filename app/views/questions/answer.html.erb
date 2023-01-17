@@ -1,0 +1,14 @@
+<div class="container mt-3 answer">
+  <h1>Stupid Coaching</h1>
+  <div class="your_question">
+    <h2>Question: "<%= params[:question] %>"</h2>
+    <p>--You</p>
+  </div>
+  <div class="coach_answer">
+    <h2>-<%= @result %></h2>
+    <p>--Your Coach</p>
+  </div>
+  <div class="linkToAsk">
+    <%= link_to("Go to ask a new question to your lovely Coach", ask_path) %>
+  </div>
+</div>
